@@ -10,17 +10,17 @@ Route::get('/about', function () {
 });
 Route::get('/clients', function () {
    $clients=[
-    ["name"=>"Client 1","price"=>100,"id"=>1],
-    ["name"=>"Client 2","price"=>100,"id"=>2],
-    ["name"=>"Client 3","price"=>100,"id"=>3],
+    ["name"=>"Bike 1","price"=>100,"id"=>1],
+    ["name"=>"Bike 2","price"=>100,"id"=>2],
+    ["name"=>"Bike 3","price"=>100,"id"=>3],
    ];
    return view('clients.index',['clients'=>$clients]);
 });
 Route::get('/clients/{id}', function ($id) {
     $clients = [
-        ["name" => "Name : Chad", "price" => 1000, "id" => 1],
-        ["name" => "Name : Alex", "price" => 100, "id" => 2],
-        ["name" => "Name : Justin", "price" => 100, "id" => 3],
+        ["name" => "Name : Chad","age" =>"Available: ✅", "price" => 1000, "id" => 1],
+        ["name" => "Name : Alex","age" => "Available: ✅", "price" => 100, "id" => 2],
+        ["name" => "Name : Justin","age" =>"Available:  ✅", "price" => 100, "id" => 3],
     ];
 
     return view('clients.clientdetail', ['client' => $clients[$id - 1]]);
