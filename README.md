@@ -34,22 +34,7 @@ Developed in **just one day** using **Laravel** — now I'm officially PHP-ready
 
 ---
 
-## 🚀 Getting Started
 
-
-# 1. Clone the repo
-git clone https://github.com/yourusername/bike-rental-user-panel-laravel.git
-
-# 2. Navigate in
-cd bike-rental-user-panel-laravel
-
-# 3. Install dependencies
-composer install
-npm install && npm run dev
-
-# 4. Setup environment
-cp .env.example .env
-php artisan key:generate
 
 # 5. Migrate database
 php artisan migrate --seed
